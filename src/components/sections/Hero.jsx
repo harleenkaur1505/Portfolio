@@ -54,6 +54,19 @@ export default function Hero() {
           <h2 className="text-2xl md:text-3xl font-syne font-semibold bg-clip-text text-transparent bg-gradient-to-r from-accent-lavender to-accent-teal">
             Full Stack Developer (MERN)
           </h2>
+          
+          {/* Skill Pills */}
+          <div className="flex flex-wrap justify-center gap-3 pt-2">
+            {['React', 'Node.js', 'MongoDB', 'Express.js', 'TypeScript'].map((skill, index) => (
+              <span 
+                key={index}
+                className="px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-white/80 text-sm font-medium hover:bg-white/10 hover:border-accent-teal/30 hover:text-accent-teal transition-all cursor-default shadow-sm"
+              >
+                {skill}
+              </span>
+            ))}
+          </div>
+
           <p className="text-[#9CA3AF] text-lg md:text-xl font-light leading-relaxed pt-3 max-w-2xl mx-auto px-4">
             Building elegant, scalable, and human-centered digital experiences.
           </p>
@@ -82,6 +95,16 @@ export default function Hero() {
             className="px-8 py-3.5 rounded-full bg-white/5 border border-white/10 text-white font-medium hover:border-accent-pink/50 hover:bg-accent-pink/5 hover:shadow-[0_0_15px_rgba(249,168,212,0.2)] transition-all duration-300 flex items-center justify-center"
           >
             Contact Me
+          </motion.a>
+          
+          <motion.a 
+            href="/resume/portfolio.pdf"
+            download="Harleen_Kaur_Resume.pdf"
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.98 }}
+            className="px-8 py-3.5 rounded-full bg-white/5 border border-white/10 text-white font-medium hover:border-accent-teal/50 hover:bg-accent-teal/5 hover:shadow-[0_0_15px_rgba(45,212,191,0.2)] transition-all duration-300 flex items-center justify-center"
+          >
+            Download Resume
           </motion.a>
         </motion.div>
       </div>
