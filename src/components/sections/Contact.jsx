@@ -80,7 +80,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-24 min-h-screen relative z-10 w-full flex flex-col items-center justify-center bg-futuristic">
+    <section id="contact" className="relative z-10 flex min-h-screen w-full flex-col items-center justify-center bg-transparent py-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative">
         
         {/* Background ambient orbs */}

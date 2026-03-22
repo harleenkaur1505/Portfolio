@@ -27,7 +27,7 @@ export default function Footer() {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="relative z-10 bg-futuristic border-t border-accent-lavender/20 shadow-[0_-15px_40px_rgba(167,139,250,0.06)] pt-16 pb-8"
+      className="relative z-10 border-t border-white/10 bg-futuristic/35 backdrop-blur-md shadow-[0_-12px_40px_rgba(0,0,0,0.2)] pt-16 pb-8"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         

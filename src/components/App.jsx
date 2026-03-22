@@ -2,6 +2,7 @@ import React from 'react'
 
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import SiteBackground from "./SiteBackground";
 
 import Hero from "./sections/Hero";
 import About from "./sections/About";
@@ -14,10 +15,11 @@ import Contact from "./sections/Contact";
 
 function App() {
   return (
-    <div className="min-h-screen bg-futuristic text-white font-sans overflow-x-hidden selection:bg-accent-lavender selection:text-white">
+    <div className="relative min-h-screen overflow-x-hidden bg-futuristic text-white font-sans selection:bg-accent-lavender selection:text-white">
+      <SiteBackground />
       <Navbar />
       
-      <main className="w-full relative">
+      <main className="relative z-10 w-full">
         <Hero />
         <About />
         <Skills />

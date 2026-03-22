@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 export default function About() {
   return (
-    <section id="about" className="py-24 min-h-screen flex flex-col justify-center relative bg-futuristic">
+    <section id="about" className="relative flex min-h-screen flex-col justify-center bg-transparent py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
         <motion.div 
@@ -104,7 +104,7 @@ export default function About() {
               <svg className="w-7 h-7 text-accent-lavender" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
             </div>
             <h3 className="text-xl font-syne font-bold text-white mb-3 group-hover:text-accent-lavender transition-colors">MERN Stack Developer</h3>
-            <p className="text-gray-400 text-sm">Crafting full-stack applications with MongoDB, Express, React, and Node.js for scalable solutions.</p>
+            <p className="text-gray-400 text-sm">Crafting full-stack applications with MongoDB, Express, React, and Node for scalable solutions.</p>
           </motion.div>
 
           {/* Card 2: DSA Enthusiast */}

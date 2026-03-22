@@ -33,7 +33,7 @@ const skillCategories = [
     title: "Backend",
     icon: Server,
     skills: [
-      { name: "Node.js / Express", value: 88, icon: Terminal },
+      { name: "Node / Express", value: 88, icon: Terminal },
       { name: "REST APIs", value: 92, icon: Globe },
       { name: "GraphQL", value: 75, icon: Cpu }
     ]
@@ -141,7 +141,7 @@ export default function Skills() {
   }
 
   return (
-    <section id="skills" className="py-24 min-h-screen flex flex-col justify-center relative bg-futuristic">
+    <section id="skills" className="relative flex min-h-screen flex-col justify-center bg-transparent py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
         
         {/* Header */}

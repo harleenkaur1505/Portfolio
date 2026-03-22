@@ -77,7 +77,7 @@ export default function Achievements() {
   }
 
   return (
-    <section id="achievements" className="py-24 min-h-screen relative z-10 w-full bg-futuristic flex flex-col justify-center">
+    <section id="achievements" className="relative z-10 flex min-h-screen w-full flex-col justify-center bg-transparent py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
         {/* Header */}

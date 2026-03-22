@@ -72,7 +72,7 @@ const projects = [
         </div>
       </div>
     ),
-    tags: ["Node.js", "Express.js", "MongoDB", "Socket.io"],
+    tags: ["Node", "Express", "MongoDB", "Socket.io"],
     accent: "accent-lavender",
     githubUrl: "https://github.com/harleenkaur1505/TaskFlow"
   },
@@ -153,7 +153,7 @@ const projects = [
         </div>
       </div>
     ),
-    tags: ["React.js", "Node.js", "Express.js", "MongoDB"],
+    tags: ["React", "Node", "Express", "MongoDB"],
     accent: "accent-teal",
     githubUrl: "https://github.com/harleenkaur1505/Club-Hub"
   },
@@ -378,7 +378,7 @@ export default function Projects() {
   }
 
   return (
-    <section id="projects" className="py-24 min-h-screen relative z-10 w-full bg-futuristic">
+    <section id="projects" className="relative z-10 w-full bg-transparent py-24 min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
         <motion.div 

@@ -12,8 +12,8 @@ const resumeData = {
     }
   ],
   skills: [
-    { category: "Frontend", items: "React.js, HTML, CSS, JavaScript" },
-    { category: "Backend", items: "Node.js, Express.js, PHP" },
+    { category: "Frontend", items: "React, HTML, CSS, JavaScript" },
+    { category: "Backend", items: "Node, Express, PHP" },
     { category: "Database", items: "MongoDB" },
     { category: "Tools", items: "Git, Postman" },
     { category: "Core", items: "Data Structures & Algorithms" }
@@ -26,7 +26,7 @@ const resumeData = {
         "Implemented real-time updates using Socket.io for multi-user collaboration",
         "Added activity tracking, deadlines, and role-based access control"
       ],
-      tech: "Node.js, Express.js, MongoDB, Socket.io"
+      tech: "Node, Express, MongoDB, Socket.io"
     },
     {
       title: "ClubHub – Club Membership Management System",
@@ -36,7 +36,7 @@ const resumeData = {
         "Enabled membership requests, approvals, and member management features",
         "Designed a dashboard for managing users and club activities"
       ],
-      tech: "React.js, Node.js, Express.js, MongoDB"
+      tech: "React, Node, Express, MongoDB"
     },
     {
       title: "CareerConnect – Job Searching Platform",
@@ -74,7 +74,7 @@ export default function Resume() {
   }
 
   return (
-    <section id="resume" className="py-24 min-h-screen relative z-10 w-full bg-futuristic flex flex-col justify-center">
+    <section id="resume" className="relative z-10 flex min-h-screen w-full flex-col justify-center bg-transparent py-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
         {/* Header */}
