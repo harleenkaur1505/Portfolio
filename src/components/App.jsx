@@ -1,14 +1,16 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
-import Hero from './components/sections/Hero'
-import About from './components/sections/About'
-import Skills from './components/sections/Skills'
-import Projects from './components/sections/Projects'
-import Certifications from './components/sections/Certifications'
-import Achievements from './components/sections/Achievements'
-import Resume from './components/sections/Resume'
-import Contact from './components/sections/Contact'
+
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+
+import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Skills from "./sections/Skills";
+import Projects from "./sections/Projects";
+import Certifications from "./sections/Certifications";
+import Achievements from "./sections/Achievements";
+import Resume from "./sections/Resume";
+import Contact from "./sections/Contact";
 
 function App() {
   return (
