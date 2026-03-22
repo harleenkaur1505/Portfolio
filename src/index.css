@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-futuristic text-white antialiased;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)];
+  }
+
+  .glow-text-lavender {
+    text-shadow: 0 0 10px rgba(167, 139, 250, 0.4), 0 0 20px rgba(167, 139, 250, 0.2);
+  }
+
+  .glow-text-teal {
+    text-shadow: 0 0 10px rgba(45, 212, 191, 0.4), 0 0 20px rgba(45, 212, 191, 0.2);
+  }
+
+  .glow-text-pink {
+    text-shadow: 0 0 10px rgba(249, 168, 212, 0.4), 0 0 20px rgba(249, 168, 212, 0.2);
+  }
+  
+  .glow-box-lavender {
+    box-shadow: 0 0 15px rgba(167, 139, 250, 0.3), inset 0 0 10px rgba(167, 139, 250, 0.1);
+  }
+
+  .glow-box-teal {
+    box-shadow: 0 0 15px rgba(45, 212, 191, 0.3), inset 0 0 10px rgba(45, 212, 191, 0.1);
+  }
+
+  .glow-box-pink {
+    box-shadow: 0 0 15px rgba(249, 168, 212, 0.3), inset 0 0 10px rgba(249, 168, 212, 0.1);
+  }
+}
