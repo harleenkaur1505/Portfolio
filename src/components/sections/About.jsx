@@ -29,31 +29,41 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex justify-center md:justify-start"
           >
-            <div className="relative w-full max-w-sm aspect-[4/5] rounded-2xl p-1 overflow-hidden group">
-              {/* Outer Glow container */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-accent-teal/40 via-accent-lavender/40 to-accent-pink/40 blur-xl opacity-50 group-hover:opacity-100 transition-opacity duration-700"></div>
-              
-              {/* Image Container */}
-              <div className="w-full h-full rounded-xl flex overflow-hidden relative bg-white/5 backdrop-blur-sm border border-white/10 z-10 p-2">
-                <div className="w-full h-full rounded-lg bg-black/50 overflow-hidden relative">
+            {/* Avatar Container with Subtle Float */}
+            <motion.div 
+              animate={{ y: [0, -8, 0] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+              className="relative w-[280px] h-[280px] md:w-[320px] md:h-[320px] flex items-center justify-center group mx-auto md:mx-0"
+            >
+              {/* Pulsing Gradient Ring behind Avatar (Enhanced but soft) */}
+              <motion.div 
+                animate={{ scale: [1, 1.05, 1], opacity: [0.3, 0.5, 0.3] }}
+                transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute -inset-4 rounded-full bg-gradient-to-br from-accent-lavender to-accent-pink blur-[35px]" 
+              />
+
+              {/* Core Avatar Image */}
+              <div 
+                className="relative w-full h-full rounded-full p-[4px] bg-gradient-to-br from-accent-lavender/40 to-accent-pink/40 shadow-[0_8px_40px_rgba(0,0,0,0.4)] z-10"
+              >
+                <div className="w-full h-full rounded-full overflow-hidden border-[6px] border-futuristic bg-futuristic relative">
                   <img 
-                    src="/profile.jpg" 
+                    src="/professional.jpg" 
                     alt="Professional portrait" 
-                    className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-105 transform"
+                    className="w-full h-full object-cover object-[50%_15%] opacity-90 group-hover:opacity-100 transition-all duration-500 group-hover:scale-105 transform"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
                     }}
                   />
                   {/* Fallback if image not found */}
-                  <div className="absolute inset-0 hidden items-center justify-center text-white/50 font-syne text-lg flex-col gap-2">
+                  <div className="absolute inset-0 hidden items-center justify-center text-white/50 font-syne text-lg flex-col gap-2 bg-black/50">
                     <svg className="w-12 h-12 mb-2 text-white/30" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
                     [Formal Photo]
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-futuristic to-transparent z-10 opacity-60"></div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
 
           {/* Right: Text Content */}
