@@ -29,24 +29,24 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex justify-center md:justify-start"
           >
-            {/* Avatar Container with Subtle Float */}
+            {/* Portrait Container with Subtle Float */}
             <motion.div 
               animate={{ y: [0, -8, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-              className="relative w-[280px] h-[280px] md:w-[320px] md:h-[320px] flex items-center justify-center group mx-auto md:mx-0"
+              className="relative w-full max-w-sm aspect-[4/5] flex items-center justify-center group mx-auto md:mx-0"
             >
-              {/* Pulsing Gradient Ring behind Avatar (Enhanced but soft) */}
+              {/* Pulsing Gradient Ring behind Portrait (Enhanced but soft) */}
               <motion.div 
                 animate={{ scale: [1, 1.05, 1], opacity: [0.3, 0.5, 0.3] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-                className="absolute -inset-4 rounded-full bg-gradient-to-br from-accent-lavender to-accent-pink blur-[35px]" 
+                className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-accent-lavender to-accent-pink blur-[35px]" 
               />
 
-              {/* Core Avatar Image */}
+              {/* Core Portrait Image */}
               <div 
-                className="relative w-full h-full rounded-full p-[4px] bg-gradient-to-br from-accent-lavender/40 to-accent-pink/40 shadow-[0_8px_40px_rgba(0,0,0,0.4)] z-10"
+                className="relative w-full h-full rounded-2xl p-[4px] bg-gradient-to-br from-accent-lavender/40 to-accent-pink/40 shadow-[0_8px_40px_rgba(0,0,0,0.4)] z-10"
               >
-                <div className="w-full h-full rounded-full overflow-hidden border-[6px] border-futuristic bg-futuristic relative">
+                <div className="w-full h-full rounded-[14px] overflow-hidden border-[6px] border-futuristic bg-futuristic relative">
                   <img 
                     src="/professional.jpg" 
                     alt="Professional portrait" 
@@ -72,27 +72,19 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="space-y-6 text-gray-300 text-lg leading-relaxed file:font-sans"
+            className="space-y-6 text-gray-300 text-lg leading-relaxed font-sans"
           >
             <p>
-              Hello! I'm a passionate <span className="text-white font-medium glow-text-lavender">MERN Stack Developer</span> and tech enthusiast bridging the gap between elegant design and complex functionality. I construct scalable web applications that not only solve real-world problems but provide an intuitive user experience.
+              Hi, I’m <span className="text-white font-medium glow-text-teal">Harleen</span> — someone who got pulled into tech not by a single moment, but by a series of “how does this actually work?” questions. What started as a habit of questioning how things work soon turned into building things on my own — small interfaces at first, then full-fledged applications where I could control both the experience and the logic behind it. That’s where I found my interest in full-stack development.
             </p>
             
-            <div className="space-y-4 pt-2">
-              <div className="flex items-start gap-4">
-                <div className="w-1.5 h-1.5 rounded-full bg-accent-lavender mt-2.5 flex-shrink-0 glow-box-lavender"></div>
-                <p><strong className="text-white">Student:</strong> Dedicated to continuous learning, currently honing my skills in computer science and modern software engineering practices.</p>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="w-1.5 h-1.5 rounded-full bg-accent-teal mt-2.5 flex-shrink-0 glow-box-teal"></div>
-                <p><strong className="text-white">Developer:</strong> Specializing in the MERN stack (MongoDB, Express, React, Node.js) to build robust and responsive applications.</p>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="w-1.5 h-1.5 rounded-full bg-accent-pink mt-2.5 flex-shrink-0 glow-box-pink"></div>
-                <p><strong className="text-white">Goals:</strong> Aiming to craft immersive, fast, and accessible digital experiences that leave a lasting impact while contributing to meaningful projects.</p>
-              </div>
-            </div>
+            <p>
+              I now work primarily with the <span className="text-white font-medium glow-text-lavender">MERN stack</span>, where I enjoy connecting the dots between clean UI and efficient backend systems. For me, it’s not just about making something work — it’s about making it feel smooth, fast, and intuitive.
+            </p>
 
+            <p>
+              Alongside development, I’m actively strengthening my <span className="text-white font-medium glow-text-pink">problem-solving skills</span> and understanding of how scalable systems are designed, so the things I build aren’t just functional, but reliable. I enjoy building projects that focus on creating immersive, fast, and accessible digital experiences that make a meaningful impact.
+            </p>
           </motion.div>
 
         </div>
