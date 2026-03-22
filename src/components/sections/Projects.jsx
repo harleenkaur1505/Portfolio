@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { motion, useMotionValue, useSpring, useTransform, useMotionTemplate } from 'framer-motion'
-import { ExternalLink, Github } from 'lucide-react'
+import { Github } from 'lucide-react'
 
 const projects = [
   {
@@ -326,10 +326,6 @@ function ProjectCard({ project, variants }) {
             
             {/* Hidden Interactive Overlay Buttons */}
             <div className="absolute inset-0 bg-[#0A0F1C]/70 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 flex flex-col items-center justify-center gap-4 transition-all duration-500 translate-y-4 group-hover:translate-y-0 z-20">
-              <a href="#" className={`flex items-center space-x-2 px-6 py-2.5 rounded-full bg-${project.accent}/10 border border-${project.accent}/30 text-white font-medium hover:bg-${project.accent} hover:text-[#0A0F1C] transition-all shadow-[0_0_15px_rgba(${glowBase},0.2)] hover:shadow-[0_0_20px_rgba(${glowBase},0.5)]`}>
-                <ExternalLink size={18} />
-                <span>Live Demo</span>
-              </a>
               <a 
                 href={project.githubUrl} 
                 target="_blank" 
