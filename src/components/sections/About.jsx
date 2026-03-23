@@ -48,9 +48,9 @@ export default function About() {
               >
                 <div className="w-full h-full rounded-[14px] overflow-hidden border-[6px] border-futuristic bg-futuristic relative">
                   <img 
-                    src="/professional.jpg" 
+                    src="/pro.jpg" 
                     alt="Professional portrait" 
-                    className="w-full h-full object-cover object-[50%_15%] opacity-90 group-hover:opacity-100 transition-all duration-500 group-hover:scale-105 transform"
+                    className="w-full h-full object-cover object-[50%_35%] opacity-90 group-hover:opacity-100 transition-all duration-500 group-hover:scale-105 transform"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
