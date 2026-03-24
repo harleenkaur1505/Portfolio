@@ -38,4 +38,20 @@
   .glow-box-pink {
     box-shadow: 0 0 15px rgba(249, 168, 212, 0.3), inset 0 0 10px rgba(249, 168, 212, 0.1);
   }
+
+  @keyframes nav-logo-glow {
+    0%,
+    100% {
+      filter: drop-shadow(0 0 4px rgba(167, 139, 250, 0.45))
+        drop-shadow(0 0 12px rgba(167, 139, 250, 0.15));
+    }
+    50% {
+      filter: drop-shadow(0 0 6px rgba(45, 212, 191, 0.4))
+        drop-shadow(0 0 14px rgba(45, 212, 191, 0.18));
+    }
+  }
+
+  .nav-logo-pulse {
+    animation: nav-logo-glow 5s ease-in-out infinite;
+  }
 }
