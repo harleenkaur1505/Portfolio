@@ -50,7 +50,7 @@ export default function About() {
                   <img 
                     src="/pro.jpg" 
                     alt="Professional portrait" 
-                    className="w-full h-full object-cover object-[50%_35%] opacity-90 group-hover:opacity-100 transition-all duration-500 group-hover:scale-105 transform"
+                    className="w-full h-full object-cover object-[50%_45%] opacity-90 group-hover:opacity-100 transition-all duration-500 group-hover:scale-105 transform"
                     onError={(e) => {
                       e.target.style.display = 'none';
                       e.target.nextSibling.style.display = 'flex';
